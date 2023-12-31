@@ -29,7 +29,7 @@ jobs:
       with:
         azcliversion: 2.54.0
         inlineScript: |
-           az cdn endpoint purge --content-paths  "resource/subscriptions/bdccc3a4-f427-4c00-af5f-cdbb1b3f5884/resourceGroups/azureresume-rg/providers/Microsoft.Cdn/profiles/" --profile-name "azureresumeckbm" --name "azureresumeckbm" --resource-group "azureresume-rg"
+           az cdn endpoint purge --content-paths  "/*" --profile-name "azureresumeckbm" --name "azureresumeckbm" --resource-group "azureresume-rg"
 
   # Azure logout
     - name: logout
